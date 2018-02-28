@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="exjquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".hide").click(function () {
+                $("p").hide()
+            });
+
+            $(".blue").click(function () {
+                $("p").show()
+            });
+
+            $(".green").click(function () {
+                $("p.tog").toggle()
+            });
+
+            $(".slide").click(function () {
+                // alert();
+                $("p.up").slideUp()
+            });
+
+            $(".slideD").click(function () {
+                $("p.up").slideDown()
+            });
+
+            $(".fadeI").click(function () {
+                $("p.fade").fadeIn()
+            });
+
+            $(".fadeO").click(function () {
+                $("p.fade").fadeOut()
+            });
+
+            $(".class").click(function () {
+                $("p.add").addClass( "select" )
+            });
+
+            $(".prev").click(function() {
+                $("p.before").before()
+            });
+
+            $(".late").click(function(){
+                $("p.after").after()
+            });
+
+            $(".pen").click(function(){
+                $("p.app").append()
+            });
+
+            $(".basic").click(function(){
+                $("p.easy").html()
+            });
+
+            $(".at").click(function(){
+                $("p.tr").attr()
+            });
+
+            $(".vee").click(function(){
+                $("p.al").val()
+            });
+
+            $(".write").click(function(){
+                $("p.letter").text()
+            })
+
+            $(".dat").click(function(){
+                $("p.wire").data()
+            });
+
+            });
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="buttons">
+        <button class="hide"> Hide me!</button>
+        <p style="display:none;">Make me Disapear</p>
+
+        <button class="blue"> bring me back!</button>
+
+
+        <button class="green"> Toggle me back!</button>
+        <p class="tog">this is crazy shit</p>
+
+        <button class="slide"> VVVVVVVVV!</button>
+        <p class="up">slide up</p>
+
+        <button class="slideD"> ^^^^^^^^^^!</button>
+
+        <button class="fadeO"> Milk and cookies</button>
+
+        <button class="fadeI"> Milk and cookies</button>
+        <p class="fade">Fade Away</p>
+ 
+        <button class="class"> Pick Me!</button>
+        <p class="add">Select</p>
+
+        <button class="prev"> VVVVVVVVV!</button>
+        <p class="before">Before</p>
+
+        <button class="late"> VVVVVVVVV!</button>
+        <p class="after">And Then</p>
+
+        <button class="pen"> Push</button>
+        <p class="app">Append,Append,Append</p>
+
+        <button class="basic"> Pick Me!!!!</button>
+        <p class="easy">Html, stuff , I am just trying to make words up</p>
+ 
+        <button class="at"> Push Me if you Dare</button>
+        <p class="tr">I am not sure what this does</p>
+
+        <button class="vee"> Ahhhhh!!!!</button>
+        <p class="al">You are my sunshine</p>
+
+        <button class="write"> Click to see dogs</button>
+        <p class="letter">Got you! I was kidding about the dogs </p>
+
+        <button class="dat"> Ok no more</button>
+        <p class="wire">My only sunshine, sometimes you make me happy.</p>
+
+    </div>
+    </div>
+</body>
+</html
